@@ -17,8 +17,8 @@ run_Analysis <- function() {
 		download.file(fileURL, zippedfilename)
 	}
 	
-  dataDir <- "UCI HAR Dataset"
-  if(!file.exists(dataDir)) { 
+	dataDir <- "UCI HAR Dataset"
+	if(!file.exists(dataDir)) { 
 		# unzip the zipped data file
 		unzip(zippedfilename, exdir = ".")
 	}
@@ -54,7 +54,7 @@ run_Analysis <- function() {
 	
 	## 4. Label the data set with descriptive variable names
 	
-    # rename as per feature_info.txt:
+	# rename as per feature_info.txt:
 	# prefix 't' denotes time
 	# prefix 'f' denotes frequency (domain signals)
 	# mean denotes Mean value
